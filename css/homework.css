@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* commmon css */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.button{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f7ba3e;
+    padding: 5px  10px;
+    border-radius: 4px;
+    opacity: 1;
+    border: solid 10px  #f7ba3e
+}
+.button:hover{
+    opacity: 0.8;
+}
+html,body{
+    height: 100%;
+}
+header{
+    position: relative;
+    height: 100%;
+    min-height: 600px;
+    background: #000 url(http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/header-bg.jpg) center center no-repeat;
+    background-size: cover;
+}
+header .logo {
+    color: #f7ba3e;
+    font-size: 32px;
+    float: left;
+    margin-top: 10px;
+}
+header .nav {
+    float: right;
+}
+header .nav > li {
+    float: left;
+    margin: 10px;
+}
+header .nav a {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+}
+header .nav a:hover{
+    background: #f7ba3e;
+}
+header .intro{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+header .intro h1{
+    font-size: 40px;
+    font-family: Droid Serif;
+    font-style: italic;
+}
+header .intro h2{
+    font-size: 65px;
+    margin-top: 20px;
+}
+header .intro .button{
+    margin-top: 20px;
+}
+
+section {
+    margin-top: 30px;
+    text-align: center;
+}
+section > h2 {
+     font-size: 40px;
+}
+section > p {
+    margin-top: 10px;
+}
+section > ul .iconfont {
+    font-size: 60px;
+}
+section .family-intro > li {
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+}
+section > ul p {
+    margin-top: 10px;
+}
+section .family figure {
+    width: calc(33.33% - 40px);
+    margin: 20px;
+    float: left;
+}
+section .family a {
+    display: block;
+  }
+section .family img {
+    width: 100%;
+    height: 100%;
+}
+section .family figcaption {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+section .family p {
+    color: #666;
+    margin-top: 5px;
+}
+section .timeline > li{
+    position: relative;
+    margin-top: 60px;
+}
+section .timeline > li:nth-child(odd) {
+    padding-right: calc(50% - 50px);
+    text-align: right;
+}
+section .timeline > li::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+section .timeline img ,
+section .timeline .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+ }
+section .timeline .img {
+    padding-top: 15px;
+    font-size: 14px;
+    display:inline-block;
+    text-align: center;
+    background-color: #fed136;
+    color: #fff;
+    font-family: Helvetica;
+    margin: 0 auto;
+}
+section .timeline > li:nth-child(odd) dl {
+    margin-right: 120px;
+}
+section .timeline > li:nth-child(odd) img{
+    float: right;
+}
+section .timeline >li:nth-child(even) {
+    padding-left: calc(50% - 50px);
+    text-align: left;
+}
+section .timeline >li:nth-child(even) dl {
+    margin-right: 0;
+    margin-left: 120px;
+}
+section .timeline > li:nth-child(even) img{
+    float: left;
+}
+section .timeline dt {
+    font-size: 16px;
+    font-weight: bold;
+}
+section .timeline dd:nth-child(2) {
+    color:#666;
+}
+section .timeline >li:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 100px;
+    margin-left: 0px;
+    display: inline-block;
+    height: 60px;
+    width: 4px;
+    background-color: lightblue;
+}
+section .timeline >li:last-child::before {
+  height: 0;
+}
+.col-lg >h2 {
+    font-size: 40px;
+    padding-top: 200px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.col-lg >p {
+    font-size: 15px;
+    padding-top: 10;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.text-muted {
+    text-align: center;
+    margin-bottom: 50px; 
+}
+.text-muted img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 7px solid #fff;  
+}
+.text-muted li {
+    margin: 33px;
+ /*    width: calc(33.33%); */
+    /* float: left; */
+    display:inline-block;
+}
+.list-iconfont a >span{
+    font-size: 40px;
+    color: #000;
+    
+}
+.list-iconfont a >span:hover{
+    color: #f7ba3e;
+}
+.intro-lorem {
+    font-size: 16px;
+    color: #777;
+    margin-left: 16.66666667%;
+    line-height: 1.75;
+    display: inline-block;
+    width: 66.66666667%;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+.footer-logo {
+    background-color: #fff;
+    text-align: center;
+    
+}
+.footer-logo >li{
+    display: inline-block;
+   /*  float: left; */
+    margin: 0 auto;
+}
+.footer-logo img {
+    margin: 50px auto;
+}
+.bg {
+    height:800px;
+    width: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background: #000 url(http://pic.cdn.weeise.com/20181127/cmdst3vizkv.jpg) center center no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+}
+.title {
+    color: #777;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.intro {
+    text-align: center;
+    font-size: 15px;
+    color: #777;
+    margin-bottom: 80px;
+    font-family: Droid Serif;
+}
+.input1, .input2, .input3 {
+    padding: 20px;
+    width: 500px;
+    font-size: 14px;
+    color: #555;
+   /*  border: 1px solid #ccc; */
+    border-radius: 4px;
+   /*  margin-top: 20px; */
+    margin-left: 100px;
+}
+.input {
+    width: 500px;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-control {
+    height:260px;
+    width: 450px;
+    padding: 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #555;
+    font-family: Droid Serif;
+    margin-left: 800px;
+    position: absolute;
+    top: -280px;
+}
+.form-group {
+  position: relative;
+}
+.btn {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f7ba3e;
+    padding: 5px  10px;
+    border-radius: 4px;
+    opacity: 1;
+    border: solid 15px  #f7ba3e;
+    position: absolute;
+    top: 60px;
+}
+.button2 {
+    position: relative;
+    margin-left: 650px;
+}
+.footer-white {
+    height: 80px;
+    background-color: #fff;
+    position: relative;
+}
+.copyright {
+    position: absolute;
+    left: 200px;
+    top: 40px;
+}
+.ic ul li {
+    float: left;    
+}
+.ic {
+   margin-left: 600px;
+   padding-top: 20px;
+}
+.use {
+    color: #f7ba3e;
+    margin-left: 1000px;
+    margin-top: -40px;
+}
+
+

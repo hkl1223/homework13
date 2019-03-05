@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+/* commmon css */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.button{
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    background-color: #f7ba3e;
+    padding: 5px  10px;
+    border-radius: 4px;
+    opacity: 1;
+    border: solid 10px  #f7ba3e;
+}
+.button:hover{
+    opacity: 0.8;
+}
+.layout{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font:14px/1.5 Arial;
+    background-color: #eee;
+    color: #444;
+}
